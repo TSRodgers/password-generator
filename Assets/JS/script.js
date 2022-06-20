@@ -17,26 +17,26 @@ function findLength() {
 
 // Prompts the user to decide what character types they want to use in pass
 function findTypes() {
-    lowerConfirm = window.confirm("Would you like your password to include lowercase letters?");
+    lowerConfirm = window.confirm("Click OK if you would you like your password to include lowercase letters.");
     if (lowerConfirm) {
       charTypes += "abcdefghijklmnopqrstuvwxyz"
-      upperConfirm = window.confirm("Would you like your password to include uppercase letters?")
+      upperConfirm = window.confirm("Click OK if you ould you like your password to include uppercase letters.")
     } else {
-      upperConfirm = window.confirm("Would you like your password to include uppercase letters?")
+      upperConfirm = window.confirm("Click OK if you would you like your password to include uppercase letters.")
     }
 
     if (upperConfirm) {
       charTypes += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-      numberConfirm = window.confirm("Would you like your password to include numbers?")
+      numberConfirm = window.confirm("Click OK if you would you like your password to include numbers.")
     } else {
-      numberConfirm = window.confirm("Would you like your password to include numbers?")
+      numberConfirm = window.confirm("Click OK if you would you like your password to include numbers.")
     }
 
     if (numberConfirm) {
       charTypes += "1234567890"
-      specialConfirm = window.confirm("Would you like your password to include special characters?")
+      specialConfirm = window.confirm("Click OK if you would you like your password to include special characters.")
     } else {
-      specialConfirm = window.confirm("Would you like your password to include special characters?")
+      specialConfirm = window.confirm("Click OK if you would you like your password to include special characters.")
     }
 
     if (specialConfirm) {
