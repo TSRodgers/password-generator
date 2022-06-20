@@ -5,6 +5,7 @@ var charTypes = ""
 
 // Prompts user for length of password and checks if valid input
 function findLength() {
+    passLength = ""
     passLength = parseInt(window.prompt("How long would you like your password to be? Enter a number from 8 - 128."))
     if (isNaN(passLength) || passLength > 128 || passLength < 8) {
       window.alert("Invalid input, please enter a valid number.");
@@ -17,6 +18,8 @@ function findLength() {
 
 // Prompts the user to decide what character types they want to use in pass
 function findTypes() {
+    charTypes = ""
+
     lowerConfirm = window.confirm("Click OK if you would you like your password to include lowercase letters.");
     if (lowerConfirm) {
       charTypes += "abcdefghijklmnopqrstuvwxyz"
