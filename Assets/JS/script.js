@@ -53,13 +53,22 @@ function findTypes() {
     }
 }
 
+// function that chooses a random character from the charset created by findTypes() and loops a set amount of times decided by findLength()
 function generatePassword() {
-  
+  var pass = ""
+  // used stack overflow for this, for loop partially borrowed from user csharptest.net
+  for (var i = 0; i < passLength; i++) {
+    pass += charTypes.charAt(Math.floor(Math.random() * charTypes.length))
+  }
+  console.log(pass)
+  return pass
 }
 
 
 // Write password to the #password input
 function writePassword() {
+  var passLength = ""
+  var charTypes = ""
   findLength();
   findTypes();
   var password = generatePassword();
